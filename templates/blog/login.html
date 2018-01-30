@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{userform}}
+    <input type="submit" name="sumit" value="login">
+</form>
+<a href="/">首页 </a>
+<br>
+<a href="/register/">注册 </a>
+</body>
+</html>
